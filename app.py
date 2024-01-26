@@ -43,7 +43,7 @@ def add_book():
         # Redirect to the list of books
         return redirect(url_for('books'))
 
-    return render_template('add_book.html')
+    return render_template('templates/add_book.html')
 
 if __name__ == '__main__':
     app.run(debug=True)
