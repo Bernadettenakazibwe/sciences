@@ -22,7 +22,7 @@ with app.app_context():
 @app.route('/books')
 def books():
     book_list = Book.query.all()
-    return render_template('books.html', books=book_list)
+    return render_template('templates/books.html', books=book_list)
 
 # Route to add a new book
 @app.route('/add_book', methods=['GET', 'POST'])
